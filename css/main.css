@@ -15,7 +15,7 @@ html
 body
 {
     font-family: 'Quicksand', sans-serif;
-/*  font-family: 'Roboto', sans-serif; */
+ /* font-family: 'Roboto', sans-serif; */
 }
 
 :root
@@ -24,7 +24,7 @@ body
     --very-light-pink: #c7c7c7;
     --hospital-green: #acd9b2;
     --white: #fff;
-    --input-input-field: #f7f7f7;
+    --input-field: #f7f7f7;
     --dark: #232830;
     --black: #000;
 }
