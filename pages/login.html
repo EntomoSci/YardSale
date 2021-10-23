@@ -14,64 +14,38 @@
             body
             {
                 display: flex;
-                flex-direction: column;
+                justify-content: center;
                 align-items: center;
                 
                 width: 100%;
                 height: 100vh;
             }
-            .header__logo
+            .main-container__logo
             {
                 width: 180px;
                 height: auto;
                 padding-top: 80px;
-                padding-bottom: 30px;
+                padding-bottom: 20px;
             }
             .main-container
             {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-
+                justify-content: space-between;
                 width: 90%;
                 max-width: 320px;
-                height: 100vh;
-            }
-            .main-container__form-section
-            {
                 height: 100%;
-            }
-            .title-section__title
-            {
-                font-size: 1.6rem;
-                font-weight: 700;
-                letter-spacing: -0.2px;
-
-                margin-bottom: .5rem;
-            }
-            .title-section__subtitle
-            {
-                font-size: 1.4rem;
-                font-weight: 500;
-
-                margin-bottom: 3rem;
-
-                color: var(--very-light-pink);
+                max-height: 600px;
             }
             .main-container__form-section
             {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: space-between;
-                height: 100%;
             }
-            .form-section__form
-            {
-                width: 100%;
-            }
-            .main-container__title-section,
             .main-container__form-section,
+            .form-section__form,
             .form__email-container,
             .form__password-container
             {
@@ -106,7 +80,7 @@
                 text-align: center;
                 color: var(--hospital-green);
             }
-            .form-section__button--signup
+            .main-container__button--signup
             {
                 margin-bottom: 20px;
             }
@@ -114,10 +88,8 @@
     </head>
 
     <body>
-        <header class="header">
-            <img class="header__logo" src="../assets/img/logos/logo_yard_sale.svg" alt="Yard Sale Logo">
-        </header>
         <main class="main-container">
+            <img class="main-container__logo" src="../assets/img/logos/logo_yard_sale.svg" alt="Yard Sale Logo">
             <section class="main-container__form-section">
                 <form class="form-section__form" action="">
                     <div class="form__email-container">
@@ -133,8 +105,8 @@
                         <a class="button-section__forgot-password-link" href="">Forgot my password</a>
                     </div>
                 </form>
-                <button class="form-section__button--signup secondary-button">Sign up</button>
             </section>
+            <button class="main-container__button--signup secondary-button">Sign up</button>
         </main>
     </body>
 
