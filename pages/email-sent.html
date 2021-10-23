@@ -52,29 +52,49 @@
 
                 color: var(--very-light-pink);
             }
-            .main-container__title-section,
-            .form-section__form
+            .main-container__title-section
             {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
-            .main-container__title-section,
-            .main-container__form-section,
-            .form__password-container,
-            .form__repeat-password-container
+            .title-section__title,
+            .title-section__subtitle,
+            .resend-email-container__text
             {
-                width: 100%;
+                text-align: center;
             }
-            .form__password-container
+            .main-container__email-icon
             {
-                margin-bottom: 20px;
+                width: 80px;
+                height: auto;
+                margin-top: 30px;
+                margin-bottom: 30px;
             }
-            .form__password-container,
-            .form__repeat-password-container
+            .main-container__button-section
             {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            .button-section__button--login
+            {
+                margin-bottom: 20px;
+            }
+            .resend-email-container__text
+            {
+                font-size: 1.1rem;
+                font-weight: 500;
+
+                color: var(--dark);
+            }
+            .resent-email-container__link
+            {
+                margin-left: 2px;
+                text-decoration: none;
+
+                color: var(--hospital-green);
             }
         </style>
     </head>
@@ -85,21 +105,15 @@
         </header>
         <main class="main-container">
             <section class="main-container__title-section">
-                <h1 class="title-section__title">Create a new password</h1>
-                <p class="title-section__subtitle">Enter a new password for your account</p>
+                <h1 class="title-section__title">Email has been sent!</h1>
+                <p class="title-section__subtitle">Please check your inbox for instructions on how to reset the password</p>
             </section>
-            <section class="main-container__form-section">
-                <form class="form-section__form" action="">
-                    <div class="form__password-container">
-                        <label class="password-container__label-password generic-input-label" for="password">Password</label>
-                        <input class="password-container__input-password generic-input" type="password" id="password" placeholder="*********" />
-                    </div>
-                    <div class="form__repeat-password-container">
-                        <label class="repeat-password-container__label-repeat-password generic-input-label" for="repeat-password">Re-enter password</label>
-                        <input class="repeat-password-container__input-repeat-password generic-input" type="password" id="repeat-password" placeholder="*********" />
-                    </div>
-                    <input class="form__button--submit primary-button" type="submit" value="Confirm new password" />
-                </form>
+            <img class="main-container__email-icon" src="../assets/icons/email.svg" alt="Email green icon">
+            <section class="main-container__button-section">
+                <button class="button-section__button--login primary-button">Login</button>
+                <div class="button-section__resend-email-container">
+                    <p class="resend-email-container__text">Didn't receive the email? <a class="resent-email-container__link" href="">Resend</a></p>
+                </div>
             </section>
         </main>
     </body>
