@@ -22,9 +22,10 @@
             }
             .header__logo
             {
-                width: 130px;
+                width: 180px;
                 height: auto;
-                padding: 60px 0;
+                padding-top: 80px;
+                padding-bottom: 30px;
             }
             .main-container
             {
@@ -35,6 +36,10 @@
                 width: 90%;
                 max-width: 320px;
                 height: 100vh;
+            }
+            .main-container__form-section
+            {
+                height: 100%;
             }
             .title-section__title
             {
@@ -49,51 +54,61 @@
                 font-size: 1.4rem;
                 font-weight: 500;
 
+                margin-bottom: 3rem;
+
                 color: var(--very-light-pink);
             }
-            .main-container__title-section
+            .main-container__form-section
             {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: space-between;
+                height: 100%;
             }
-            .title-section__title,
-            .title-section__subtitle,
-            .resend-email-container__text
+            .form-section__form
             {
-                text-align: center;
-            }
-            .main-container__email-icon
-            {
-                width: 80px;
-                height: auto;
-                margin-top: 50px;
-                margin-bottom: 50px;
-            }
-            .main-container__button-section
-            {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 width: 100%;
+            }
+            .main-container__title-section,
+            .main-container__form-section,
+            .form__email-container,
+            .form__password-container
+            {
+                width: 100%;
+            }
+            .form__email-container
+            {
+                margin-bottom: 20px;
+            }
+            .form__email-container,
+            .form__password-container
+            {
+                display: flex;
+                flex-direction: column;
+            }
+            .form-section__button-section
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 40px;
             }
             .button-section__button--login
             {
                 margin-bottom: 20px;
             }
-            .resend-email-container__text
+            .button-section__forgot-password-link
             {
                 font-size: 1.1rem;
                 font-weight: 500;
-
-                color: var(--dark);
-            }
-            .resent-email-container__link
-            {
-                margin-left: 2px;
                 text-decoration: none;
-
+                text-align: center;
                 color: var(--hospital-green);
+            }
+            .form-section__button--signup
+            {
+                margin-bottom: 20px;
             }
         </style>
     </head>
@@ -103,16 +118,22 @@
             <img class="header__logo" src="../assets/img/logos/logo_yard_sale.svg" alt="Yard Sale Logo">
         </header>
         <main class="main-container">
-            <section class="main-container__title-section">
-                <h1 class="title-section__title">Email has been sent!</h1>
-                <p class="title-section__subtitle">Please check your inbox for instructions on how to reset the password</p>
-            </section>
-            <img class="main-container__email-icon" src="../assets/icons/email.svg" alt="Email green icon">
-            <section class="main-container__button-section">
-                <button class="button-section__button--login primary-button">Login</button>
-                <div class="button-section__resend-email-container">
-                    <p class="resend-email-container__text">Didn't receive the email? <a class="resent-email-container__link" href="">Resend</a></p>
-                </div>
+            <section class="main-container__form-section">
+                <form class="form-section__form" action="">
+                    <div class="form__email-container">
+                        <label class="email-container__label-email generic-input-label" for="login-email">Email address</label>
+                        <input class="email-container__input-email generic-input" type="password" id="login-email" name="login-email" placeholder="*********" />
+                    </div>
+                    <div class="form__password-container">
+                        <label class="password-container__label-password generic-input-label" for="login-password">Password</label>
+                        <input class="password-container__input-password generic-input" type="password" id="login-password" name="login-password" placeholder="*********" />
+                    </div>
+                    <div class="form-section__button-section">
+                        <input class="button-section__button--login primary-button" type="submit" value="Log in" />
+                        <a class="button-section__forgot-password-link" href="">Forgot my password</a>
+                    </div>
+                </form>
+                <button class="form-section__button--signup secondary-button">Sign up</button>
             </section>
         </main>
     </body>
