@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <title>Yard Sale</title>
+        <style>
+            body
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                width: 100%;
+                height: 100vh;
+            }
+            header
+            {
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+            .main-container
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+                width: 90%;
+                max-width: 320px;
+                height: 100%;
+                margin-top: 120px;
+            }
+            .main-container__navbar
+            {
+                display: flex;
+                justify-content: space-between;
+                
+                width: 100%;
+                padding: 10px;
+                
+                box-shadow: 0 5px 5px 1px var(--input-field);
+                background-color: var(--white);
+            }
+            .navbar__menu
+            {
+                width: 20px;
+                height: auto;
+            }
+            .navbar__logo
+            {
+                width: 80px;
+                height: auto;
+            }
+            .navbar__shopping
+            {
+                width: 25px;
+                height: auto;
+            }
+            .form-section__title
+            {
+                width: 100%;
+
+                font-size: 1.6rem;
+                font-weight: 700;
+                letter-spacing: -0.2px;
+
+                margin-bottom: 40px;
+            }
+            .main-container__title-section,
+            .form-section__form
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .main-container__form-section,
+            .form__user-name-container,
+            .form__user-email-container,
+            .form__user-password-container
+            {
+                width: 100%;
+            }
+            .form__user-name-container,
+            .form__user-email-container
+            {
+                margin-bottom: 20px;
+            }
+            .form__user-name-container,
+            .form__user-email-container,
+            .form__user-password-container
+            {
+                display: flex;
+                flex-direction: column;
+            }
+            .user-name-container__user-name,
+            .user-email-container__user-email,
+            .user-password-container__user-password
+            {
+                font-size: 1.4rem;
+                font-weight: 500;
+                
+                height: 40px;
+                padding: 5px 10px;
+
+                color: var(--very-light-pink);
+            }
+            .main-container__button--create-account
+            {
+                margin-bottom: 20px;
+            }
+            @media (min-width: 768px)
+            {
+                body
+                {
+                    justify-content: center;
+                }
+                .main-container
+                {
+                    max-height: 400px;
+                    margin-top: 0;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav class="main-container__navbar">
+                <img class="navbar__menu" src="../assets/icons/icon_menu.svg" alt="Yard Sale Menu">
+                <img class="navbar__logo" src="../assets/img/logos/logo_yard_sale.svg" alt="Yard Sale Logo">
+                <img class="navbar__shopping" src="../assets/icons/icon_shopping_cart_notification.svg" alt="Yard Sale Shopping Car">
+            </nav>
+        </header>
+        <main class="main-container">
+            <section class="main-container__form-section">
+                <h1 class="form-section__title">My account</h1>
+                <form class="form-section__form" action="">
+                    <div class="form__user-name-container">
+                        <label class="user-name-container__label-user-name generic-input-label" for="user-name">Name</label>
+                        <p class="user-name-container__user-name" id="user-name">Alan Turing</p>
+                    </div>
+                    <div class="form__user-email-container">
+                        <label class="user-email-container__label-email generic-input-label" for="user-email">Email address</label>
+                        <p class="user-email-container__user-email"id="user-email">alanturing@gmail.com</p>
+                    </div>
+                    <div class="form__user-password-container">
+                        <label class="user-password-container__label-password generic-input-label" for="user-password">Password</label>
+                        <p class="user-password-container__user-password" id="user-password">*********</p>
+                    </div>
+                </form>
+            </section>
+            <input class="main-container__button--create-account secondary-button" type="submit" value="Edit" />
+        </main>
+    </body>
+
+</html>
