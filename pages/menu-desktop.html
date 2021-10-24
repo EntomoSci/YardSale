@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <title>Menu desktop</title>
+        <style>
+            .main-container__desktop-menu
+            {
+                text-align: end;
+
+                width: 150px;
+                height: auto;
+                padding: 20px;
+                border-radius: 10px;
+
+                color: var(--dark);
+                box-shadow: 0 0 4px 0 var(--very-light-pink);
+                list-style: none;
+            }
+            .main-container__desktop-menu li a
+            {
+                text-decoration: none;
+            }
+            .desktop-menu__my-orders,
+            .desktop-menu__my-account
+            {
+                font-size: 1.8rem;
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+            .desktop-menu__signout a
+            {
+                font-size: 1.6rem;
+                font-weight: 500;
+            }
+            .desktop-menu__signout
+            {
+                padding-top: 25px;
+                border-top: 1px solid var(--input-field);
+            }
+            .main-container__desktop-menu li:last-child a
+            {
+                color: var(--hospital-green);
+            }
+        </style>
+    </head>
+
+    <body>
+        <main class="main-container">
+            <ul class="main-container__desktop-menu">
+                <li class="desktop-menu__my-orders"><a href="/">My orders</a></li>
+                <li class="desktop-menu__my-account"><a href="/">My account</a></li>
+                <li class="desktop-menu__signout"><a href="/">Sign out</a></li>
+            </ul>
+        </main>
+    </body>
+
+</html>
