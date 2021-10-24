@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <title>Yard Sale</title>
+        <style>
+            body
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                width: 100%;
+                height: 100vh;
+            }
+            header
+            {
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+            .main-container
+            {
+                display: flex;
+                justify-content: center;
+
+                width: 90%;
+                height: auto;
+                margin-top: 120px;
+            }
+            .main-container__navbar
+            {
+                display: flex;
+                justify-content: space-between;
+                
+                width: 100%;
+                padding: 10px;
+                
+                box-shadow: 0 5px 5px 1px var(--input-field);
+                background-color: var(--white);
+            }
+            .navbar__menu
+            {
+                width: 20px;
+                height: auto;
+            }
+            .navbar__logo
+            {
+                width: 80px;
+                height: auto;
+            }
+            .navbar__shopping
+            {
+                width: 25px;
+                height: auto;
+            }
+            .main-container__cards-grid
+            {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 120px);
+                justify-content: center;
+                gap: 20px;
+
+                width: 100%;
+            }
+
+            .product-card
+            {
+                justify-self: center;
+                width: 100%;
+            }
+            .product-card__image
+            {
+                width: 120px;
+                height: 120px;
+
+                border-radius: 20px;
+                object-fit: cover;
+            }
+            .product-card__card-info
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                padding: 10px 0;
+            }
+
+            .card-info__text-info
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .text-info__price
+            {
+                font-size: 1.4rem;
+                font-weight: 700;
+
+                color: var(--dark);
+            }
+            .text-info__name
+            {
+                font-size: 1.3rem;
+                font-weight: 500;
+
+                color: #999;
+            }
+            .card-info__icon
+            {
+                width: 30px;
+                height: 30px;
+            }
+
+            @media (min-width: 768px)
+            {
+                .main-container__cards-grid
+                {
+                    grid-template-columns: repeat(auto-fill, 240px);
+                    /* grid-template-rows: ; */
+                }
+                .product-card__image
+                {
+                    width: 240px;
+                    height: 240px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav class="main-container__navbar">
+                <img class="navbar__menu" src="../assets/icons/icon_menu.svg" alt="Yard Sale Menu">
+                <img class="navbar__logo" src="../assets/img/logos/logo_yard_sale.svg" alt="Yard Sale Logo">
+                <img class="navbar__shopping" src="../assets/icons/icon_shopping_cart_notification.svg" alt="Yard Sale Shopping Car">
+            </nav>
+        </header>
+        <main class="main-container">
+            <section class="main-container__cards-grid">
+                <div class="product-card">
+                    <img class="product-card__image" src="../assets/img/bike.jpeg" alt="" />
+                    <div class="product-card__card-info">
+                        <div class="card-info__text-info">
+                            <p class="text-info__price">$120,00</p>
+                            <p class="text-info__name">Bike</p>
+                        </div>
+                        <img class="card-info__icon" src="../assets/icons/bt_add_to_cart.svg" title="Add to shopping car" alt="Shopping car icon" />
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-card__image" src="../assets/img/bike.jpeg" alt="" />
+                    <div class="product-card__card-info">
+                        <div class="card-info__text-info">
+                            <p class="text-info__price">$120,00</p>
+                            <p class="text-info__name">Bike</p>
+                        </div>
+                        <img class="card-info__icon" src="../assets/icons/bt_add_to_cart.svg" title="Add to shopping car" alt="Shopping car icon" />
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-card__image" src="../assets/img/bike.jpeg" alt="" />
+                    <div class="product-card__card-info">
+                        <div class="card-info__text-info">
+                            <p class="text-info__price">$120,00</p>
+                            <p class="text-info__name">Bike</p>
+                        </div>
+                        <img class="card-info__icon" src="../assets/icons/bt_add_to_cart.svg" title="Add to shopping car" alt="Shopping car icon" />
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-card__image" src="../assets/img/bike.jpeg" alt="" />
+                    <div class="product-card__card-info">
+                        <div class="card-info__text-info">
+                            <p class="text-info__price">$120,00</p>
+                            <p class="text-info__name">Bike</p>
+                        </div>
+                        <img class="card-info__icon" src="../assets/icons/bt_add_to_cart.svg" title="Add to shopping car" alt="Shopping car icon" />
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-card__image" src="../assets/img/bike.jpeg" alt="" />
+                    <div class="product-card__card-info">
+                        <div class="card-info__text-info">
+                            <p class="text-info__price">$120,00</p>
+                            <p class="text-info__name">Bike</p>
+                        </div>
+                        <img class="card-info__icon" src="../assets/icons/bt_add_to_cart.svg" title="Add to shopping car" alt="Shopping car icon" />
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-card__image" src="../assets/img/bike.jpeg" alt="" />
+                    <div class="product-card__card-info">
+                        <div class="card-info__text-info">
+                            <p class="text-info__price">$120,00</p>
+                            <p class="text-info__name">Bike</p>
+                        </div>
+                        <img class="card-info__icon" src="../assets/icons/bt_add_to_cart.svg" title="Add to shopping car" alt="Shopping car icon" />
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-card__image" src="../assets/img/bike.jpeg" alt="" />
+                    <div class="product-card__card-info">
+                        <div class="card-info__text-info">
+                            <p class="text-info__price">$120,00</p>
+                            <p class="text-info__name">Bike</p>
+                        </div>
+                        <img class="card-info__icon" src="../assets/icons/bt_add_to_cart.svg" title="Add to shopping car" alt="Shopping car icon" />
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-card__image" src="../assets/img/bike.jpeg" alt="" />
+                    <div class="product-card__card-info">
+                        <div class="card-info__text-info">
+                            <p class="text-info__price">$120,00</p>
+                            <p class="text-info__name">Bike</p>
+                        </div>
+                        <img class="card-info__icon" src="../assets/icons/bt_add_to_cart.svg" title="Add to shopping car" alt="Shopping car icon" />
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-card__image" src="../assets/img/bike.jpeg" alt="" />
+                    <div class="product-card__card-info">
+                        <div class="card-info__text-info">
+                            <p class="text-info__price">$120,00</p>
+                            <p class="text-info__name">Bike</p>
+                        </div>
+                        <img class="card-info__icon" src="../assets/icons/bt_add_to_cart.svg" title="Add to shopping car" alt="Shopping car icon" />
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-card__image" src="../assets/img/bike.jpeg" alt="" />
+                    <div class="product-card__card-info">
+                        <div class="card-info__text-info">
+                            <p class="text-info__price">$120,00</p>
+                            <p class="text-info__name">Bike</p>
+                        </div>
+                        <img class="card-info__icon" src="../assets/icons/bt_add_to_cart.svg" title="Add to shopping car" alt="Shopping car icon" />
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-card__image" src="../assets/img/bike.jpeg" alt="" />
+                    <div class="product-card__card-info">
+                        <div class="card-info__text-info">
+                            <p class="text-info__price">$120,00</p>
+                            <p class="text-info__name">Bike</p>
+                        </div>
+                        <img class="card-info__icon" src="../assets/icons/bt_add_to_cart.svg" title="Add to shopping car" alt="Shopping car icon" />
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-card__image" src="../assets/img/bike.jpeg" alt="" />
+                    <div class="product-card__card-info">
+                        <div class="card-info__text-info">
+                            <p class="text-info__price">$120,00</p>
+                            <p class="text-info__name">Bike</p>
+                        </div>
+                        <img class="card-info__icon" src="../assets/icons/bt_add_to_cart.svg" title="Add to shopping car" alt="Shopping car icon" />
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+
+</html>
