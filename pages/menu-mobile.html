@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <title>Menu mobile</title>
+        <style>
+            .main-container
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                width: 100%;
+                height: 100vh;
+                padding: 20px;
+            }
+            .section-1__title
+            {
+                font-size: 1.4rem;
+                font-weight: 700;
+
+                width: 100%;
+                height: fit-content;
+                margin-bottom: 40px;
+            }
+            .main-container__section-1
+            {
+                height: 300px;
+            }
+
+            .main-container__section-2
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                /* height: 40%; */
+                height: 160px;
+                padding-bottom: 20px;
+            }
+            a
+            {
+                text-decoration: none;
+            }
+            .section-1__mobile-menu-primary,
+            .section-2__mobile-menu-secondary
+            {
+                width: 100%;
+                height: auto;
+                list-style: none;
+            }
+            .section-1__mobile-menu-primary li,
+            .section-2__mobile-menu-secondary li
+            {
+                margin-bottom: 25px;
+            }
+            .section-1__mobile-menu-primary a,
+            .section-2__mobile-menu-secondary a
+            {
+                font-size: 1.2rem;
+                font-weight: 700;
+
+                color: var(--black);
+            }
+
+            .main-container__section-2
+            {
+                padding-top: 20px;
+                margin-top: 20px;
+                border-top: 1px solid var(--very-light-pink);
+            }
+            .mobile-menu__my-orders,
+            .mobile-menu__my-account
+            {
+                font-size: 1.8rem;
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+            .mobile-menu__signout a
+            {
+                font-size: 1.6rem;
+                font-weight: 500;
+            }
+            .signout-container__email-address
+            {
+                font-size: 1.1rem;
+                font-weight: 300;
+
+                color: var(--black);
+                margin-bottom: 5px;
+            }
+            .signout-container__signout
+            {
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: var(--hospital-green);
+            }
+        </style>
+    </head>
+
+    <body>
+        <main class="main-container">
+            <section class="main-container__section-1">
+                <h1 class="section-1__title">CATEGORIES</h1>
+                <ul class="section-1__mobile-menu-primary">
+                    <li class="mobile-menu-primary__all"><a href="/">All</a></li>
+                    <li class="mobile-menu-primary__clothes"><a href="/">Clothes</a></li>
+                    <li class="mobile-menu-primary__electronics"><a href="/">Electronics</a></li>
+                    <li class="mobile-menu-primary__furnitures"><a href="/">Furnitures</a></li>
+                    <li class="mobile-menu-primary__toys"><a href="/">Toys</a></li>
+                    <li class="mobile-menu-primary__others"><a href="/">Others</a></li>
+                </ul>
+            </section>
+            <section class="main-container__section-2">
+                <ul class="section-2__mobile-menu-secondary">
+                    <li class="mobile-menu-secondary__my-orders"><a href="/">My orders</a></li>
+                    <li class="mobile-menu-secondary__my-account"><a href="/">My account</a></li>
+                </ul>
+                <div class="section-2__signout-container">
+                    <p class="signout-container__email-address">alanturing@gmail.com</p>
+                    <a class="signout-container__signout" href="">Sign out</a>
+                </div>
+            </section>
+        </main>
+    </body>
+
+</html>
