@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <title>Yard Sale</title>
+        <style>
+            .main-container
+            {
+                width: 100%;
+                height: auto;
+                min-height: 100vh; 
+                padding: 20px;
+            }
+            .main-container__title
+            {
+                font-size: 1.6rem;
+                font-weight: 700;
+                
+                margin-bottom: 40px;
+            }
+            .main-container__orders-grid
+            {
+                display: grid;
+                grid-column: 1fr;
+                gap: 20px;
+
+                width: 100%;
+            }
+            .text-info__date,
+            .order-card__price
+            {
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+            .text-info__date
+            {
+                margin-bottom: 2px;
+                color: var(--black);
+            }
+            .text-info__total-articles
+            {
+                font-size: 1.1rem;
+                font-weight: 500;
+
+                color: var(--very-light-pink);
+            }
+
+            .orders-grid__order-card,
+            .orders-grid__product-card
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                width: 100%;
+            }
+
+            .product-card__left-container,
+            .order-card__right-container
+            {
+                display: flex;
+                align-items: center;
+            }
+            .left-container__image
+            {
+                width: 50px;
+                height: 50px;
+
+                margin-right: 10px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+            .left-container__name
+            {
+                font-size: 1.1rem;
+                font-weight: 500;
+
+                color: var(--very-light-pink);
+            }
+            .right-container__icon
+            {
+                width: 10px;
+                height: 10px;
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main class="main-container">
+            <h1 class="main-container__title">My orders</h1>
+            <section class="main-container__orders-grid">
+                <div class="orders-grid__order-card">
+                    <div class="order-card__text-info">
+                        <p class="text-info__date">10.26.2021</p>
+                        <p class="text-info__total-articles">6 articles</p>
+                    </div>
+                    <div class="order-card__right-container">
+                        <p class="order-card__price">$560.00</p>
+                        <img class="right-container__icon" src="../assets/icons/flechita.svg" alt="">
+                    </div>
+                </div>
+                <div class="orders-grid__order-card">
+                    <div class="order-card__text-info">
+                        <p class="text-info__date">10.26.2021</p>
+                        <p class="text-info__total-articles">6 articles</p>
+                    </div>
+                    <div class="order-card__right-container">
+                        <p class="order-card__price">$560.00</p>
+                        <img class="right-container__icon" src="../assets/icons/flechita.svg" alt="">
+                    </div>
+                </div>
+                <div class="orders-grid__order-card">
+                    <div class="order-card__text-info">
+                        <p class="text-info__date">10.26.2021</p>
+                        <p class="text-info__total-articles">6 articles</p>
+                    </div>
+                    <div class="order-card__right-container">
+                        <p class="order-card__price">$560.00</p>
+                        <img class="right-container__icon" src="../assets/icons/flechita.svg" alt="">
+                    </div>
+                </div>
+                <div class="orders-grid__order-card">
+                    <div class="order-card__text-info">
+                        <p class="text-info__date">10.26.2021</p>
+                        <p class="text-info__total-articles">6 articles</p>
+                    </div>
+                    <div class="order-card__right-container">
+                        <p class="order-card__price">$560.00</p>
+                        <img class="right-container__icon" src="../assets/icons/flechita.svg" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+
+</html>
