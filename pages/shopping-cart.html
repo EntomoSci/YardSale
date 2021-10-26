@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <title>Yard Sale</title>
+        <style>
+            .main-container
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                width: 100%;
+                height: auto;
+                min-height: 100vh; 
+                padding: 20px;
+            }
+            .main-container__title
+            {
+                font-size: 1.6rem;
+                font-weight: 700;
+
+                margin-bottom: 20px;
+            }
+            .order-total__order-info
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                padding: 20px 15px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+
+                background-color: var(--input-field);
+            }
+            .text-info__text,
+            .order-total__price
+            {
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+            .text-info__text
+            {
+                margin-bottom: 2px;
+                color: var(--black);
+            }
+            .product-grid__product-card
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                width: 100%;
+            }
+
+            .main-container__products-grid
+            {
+                display: grid;
+                grid-column: 1fr;
+                gap: 20px;
+
+                width: 100%;
+            }
+            .product-card__left-container
+            {
+                display: flex;
+                align-items: center;
+            }
+            .left-container__image
+            {
+                width: 50px;
+                height: 50px;
+
+                margin-right: 10px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+            .left-container__name
+            {
+                font-size: 1.1rem;
+                font-weight: 500;
+
+                color: var(--very-light-pink);
+            }
+
+            .product-card__right-container
+            {
+                display: flex;
+                align-items: center;
+            }
+            .right-container__price
+            {
+                font-size: 1.2rem;
+                font-weight: 700;
+
+                margin-right: 20px;
+
+                color: var(--dark);
+            }
+            .right-container__icon
+            {
+                width: 10px;
+                height: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main class="main-container">
+            <section class="main-container__products-grid">
+                <div class="product-grid__product-card">
+                    <div class="product-card__left-container">
+                        <img class="left-container__image" src="../assets/img/bike.jpeg" alt="A beautyfull bike">
+                        <p class="left-container__name">Beautyfull bike</p>
+                    </div>
+                    <div class="product-card__right-container">
+                        <p class="right-container__price">$30.00</p>
+                        <img class="right-container__icon" src="../assets/icons/icon_close.png" alt="">
+                    </div>
+                </div>
+                <div class="product-grid__product-card">
+                    <div class="product-card__left-container">
+                        <img class="left-container__image" src="../assets/img/bike.jpeg" alt="A beautyfull bike">
+                        <p class="left-container__name">Beautyfull bike</p>
+                    </div>
+                    <div class="product-card__right-container">
+                        <p class="right-container__price">$30.00</p>
+                        <img class="right-container__icon" src="../assets/icons/icon_close.png" alt="">
+                    </div>
+                </div>
+                <div class="product-grid__product-card">
+                    <div class="product-card__left-container">
+                        <img class="left-container__image" src="../assets/img/bike.jpeg" alt="A beautyfull bike">
+                        <p class="left-container__name">Beautyfull bike</p>
+                    </div>
+                    <div class="product-card__right-container">
+                        <p class="right-container__price">$30.00</p>
+                        <img class="right-container__icon" src="../assets/icons/icon_close.png" alt="">
+                    </div>
+                </div>
+                <div class="product-grid__product-card">
+                    <div class="product-card__left-container">
+                        <img class="left-container__image" src="../assets/img/bike.jpeg" alt="A beautyfull bike">
+                        <p class="left-container__name">Beautyfull bike</p>
+                    </div>
+                    <div class="product-card__right-container">
+                        <p class="right-container__price">$30.00</p>
+                        <img class="right-container__icon" src="../assets/icons/icon_close.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="main-container__order-total">
+                <div class="order-total__order-info">
+                    <div class="order-info__info-container">
+                        <p class="text-info__text">Total</p>
+                    </div>
+                    <p class="order-total__price">$560.00</p>
+                </div>
+                <button class="order-total__button primary-button">Checkout</button>
+            </section>
+        </main>
+    </body>
+
+</html>
